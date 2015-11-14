@@ -16,7 +16,7 @@ class WordWrap
     public function wrap(\string $string, \int $wrapLength) : \string
     {
         if ($wrapLength < 0) {
-            throw new \Exception('Wrap function allows only positive wrap length');
+            throw new \InvalidArgumentException('Wrap function allows only positive wrap length');
         }
 
         $result = '';

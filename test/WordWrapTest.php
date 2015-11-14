@@ -25,7 +25,7 @@ class WordWrapTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Exception
+     * @expectedException InvalidArgumentException
      */
     public function testWrapAcceptsOnlyPositiveWrapLength()
     {
