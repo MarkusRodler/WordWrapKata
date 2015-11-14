@@ -1,0 +1,17 @@
+{
+    "name": "dark/word-wrap-kata",
+    "description": "",
+    "authors": [
+        {
+            "name": "Markus Rodler",
+            "email": "Markus.Rodler@live.de"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.0.9"
+    },
+    "autoload": {
+        "psr-4": { "Dark\\Kata\\": ["src/", "test/"] }
+    }
+}
