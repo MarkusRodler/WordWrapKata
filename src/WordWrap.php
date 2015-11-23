@@ -5,9 +5,6 @@ namespace Dark\Kata;
 
 class WordWrap
 {
-
-    const WRAP_SEQUENCE = '\n';
-
     /**
      * @param string $string
      * @param int $wrapLength
@@ -25,10 +22,10 @@ class WordWrap
             $lastSpace = strrpos($substring, ' ');
             $result = ($lastSpace)
                     ? substr($substring, 0, $lastSpace)
-                        . self::WRAP_SEQUENCE
+                        . PHP_EOL
                         . $this->wrap(substr($string, $lastSpace + 1), $wrapLength)
                     : substr($string, 0, $wrapLength)
-                        . self::WRAP_SEQUENCE
+                        . PHP_EOL
                         . $this->wrap(substr($string, $wrapLength), $wrapLength);
         }
         else {

@@ -47,18 +47,18 @@ class WordWrapTest extends \PHPUnit_Framework_TestCase
     public function testWrapSplitWordsIfTheyAreLongerThanWrapLength()
     {
         $result = $this->wordWrap->wrap('testtesttest', 4);
-        $this->assertEquals('test\ntest\ntest', $result);
+        $this->assertEquals('test' . PHP_EOL . 'test' . PHP_EOL . 'test', $result);
     }
 
     public function testWrapMakesOneWrapIfStringContainsOneSpaceAndLineLengthIsBelowStringLength()
     {
         $result = $this->wordWrap->wrap('test test', 6);
-        $this->assertEquals('test\ntest', $result);
+        $this->assertEquals('test' . PHP_EOL . 'test', $result);
     }
 
     public function testWrapWorks()
     {
         $result = $this->wordWrap->wrap('0123 4 56 789', 3);
-        $this->assertEquals('012\n3 4\n56\n789', $result);
+        $this->assertEquals('012' . PHP_EOL . '3 4' . PHP_EOL . '56' . PHP_EOL . '789', $result);
     }
 }
