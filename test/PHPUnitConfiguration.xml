@@ -12,12 +12,12 @@
 		timeoutForSmallTests="0">
     <testsuites>
         <testsuite name="All tests">
-            <directory>../test</directory>
+            <directory>./../test</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="false">
-            <directory>../src</directory>
+            <directory>./../src</directory>
         </whitelist>
     </filter>
 	<php>
