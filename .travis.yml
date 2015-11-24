@@ -4,5 +4,8 @@ php:
   - 7.0
   - hhvm
 
-before_script: 
+before_script:
+  - composer self-update
   - composer install
+  
+script: ./vendor/bin/phpunit -v -c test/PHPUnitConfiguration.xml --coverage-text  --coverage-clover=coverage.clover
