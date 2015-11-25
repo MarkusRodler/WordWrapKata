@@ -3,8 +3,6 @@ declare(strict_types = 1);
 
 namespace Dark\Kata;
 
-require '../src/WordWrap.php';
-
 class WordWrapTest extends \PHPUnit_Framework_TestCase
 {
     /**
