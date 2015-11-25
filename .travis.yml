@@ -3,8 +3,17 @@ php:
   - 7.0
 #  - hhvm
 
+install:
+  - composer require satooshi/php-coveralls:dev-master
+
 before_script:
   - composer self-update
   - composer install
   
-script: ./vendor/bin/phpunit -v -c phpunit.xml --coverage-text  --coverage-clover=coverage.clover
+script: 
+  - mkdir -p build/logs
+  - ./vendor/bin/phpunit -v -c phpunit.xml --coverage-text --coverage-clover=./Build/Logs/Clover.xml
+
+after_script: 
+  - php vendor/bin/coveralls -v 
+
