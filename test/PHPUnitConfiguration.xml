@@ -5,7 +5,7 @@
 		beStrictAboutTestsThatDoNotTestAnything="true"
 		checkForUnintentiallyCoveredCode="true"
 		beStrictAboutOutputDuringTests="true"
-		bootstrap="../vendor/autoload.php"
+		bootstrap="./../vendor/autoload.php"
 		convertErrorsToExceptions="true"
 		convertNoticesToExceptions="true"
 		convertWarningsToExceptions="true"
