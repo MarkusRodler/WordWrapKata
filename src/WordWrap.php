@@ -10,7 +10,7 @@ class WordWrap
      * @param int $wrapLength
      * @return string
      */
-    public function wrap(\string $string, \int $wrapLength) : string
+    public function wrap(string $string, \int $wrapLength) : string
     {
         if ($wrapLength < 0) {
             throw new \InvalidArgumentException('Wrap function allows only positive wrap length');
