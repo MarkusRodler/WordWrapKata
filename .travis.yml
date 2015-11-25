@@ -1,7 +1,7 @@
 language: php
 php:
   - 7.0
-#  - hhvm
+  - hhvm
 
 install:
   - composer require satooshi/php-coveralls:dev-master
