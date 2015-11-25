@@ -1,4 +1,5 @@
 # Word Wrap Kata by Robert C. Martin
+[![Build Status](https://travis-ci.org/MarkusRodler/WordWrapKata.svg)](https://travis-ci.org/MarkusRodler/WordWrapKata)
 
 My attempt at the kata which was suggested by Robert Martin on his blog. I used the following [description](http://codingdojo.org/cgi-bin/index.pl?KataWordWrap):
 
