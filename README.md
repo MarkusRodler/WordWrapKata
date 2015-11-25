@@ -1,6 +1,7 @@
 # Word Wrap Kata by Robert C. Martin
 [![Build Status](https://travis-ci.org/MarkusRodler/WordWrapKata.svg)](https://travis-ci.org/MarkusRodler/WordWrapKata)
 [![Coverage Status](https://coveralls.io/repos/MarkusRodler/WordWrapKata/badge.svg?branch=master&service=github)](https://coveralls.io/github/MarkusRodler/WordWrapKata?branch=master)
+[![Dependency Status](https://www.versioneye.com/user/projects/5655e7e4ff016c00330018b5/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5655e7e4ff016c00330018b5)
 
 My attempt at the kata which was suggested by Robert Martin on his blog. I used the following [description](http://codingdojo.org/cgi-bin/index.pl?KataWordWrap):
 
