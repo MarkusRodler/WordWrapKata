@@ -3,6 +3,9 @@ declare(strict_types = 1);
 
 namespace Dark\Kata;
 
+/**
+ * @covers \Dark\Kata\WordWrap
+ */
 class WordWrapTest extends \PHPUnit_Framework_TestCase
 {
     /**
