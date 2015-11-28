@@ -2,13 +2,14 @@
 <phpunit
 		colors="true"
 		beStrictAboutChangesToGlobalState="true"
-		beStrictAboutTestsThatDoNotTestAnything="true"
-		checkForUnintentiallyCoveredCode="true"
 		beStrictAboutOutputDuringTests="true"
+		beStrictAboutTestsThatDoNotTestAnything="true"
 		bootstrap="vendor/autoload.php"
+		checkForUnintentiallyCoveredCode="true"
 		convertErrorsToExceptions="true"
 		convertNoticesToExceptions="true"
 		convertWarningsToExceptions="true"
+		forceCoversAnnotation="true"
 		timeoutForSmallTests="0">
     <testsuites>
         <testsuite name="All tests">
