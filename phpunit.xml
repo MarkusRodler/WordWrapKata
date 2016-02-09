@@ -5,12 +5,13 @@
 		beStrictAboutOutputDuringTests="true"
 		beStrictAboutTestsThatDoNotTestAnything="true"
 		bootstrap="vendor/autoload.php"
-		checkForUnintentiallyCoveredCode="true"
+		checkForUnintentionallyCoveredCode="true"
 		convertErrorsToExceptions="true"
 		convertNoticesToExceptions="true"
 		convertWarningsToExceptions="true"
 		forceCoversAnnotation="true"
-		timeoutForSmallTests="0">
+		timeoutForSmallTests="0"
+		verbose="true">
     <testsuites>
         <testsuite name="All tests">
             <directory>test</directory>
