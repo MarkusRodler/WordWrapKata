@@ -3,6 +3,8 @@ declare(strict_types = 1);
 
 namespace Dark\Kata;
 
+use InvalidArgumentException;
+
 class WordWrap
 {
     /**
@@ -12,9 +14,7 @@ class WordWrap
      */
     public function wrap(string $string, int $wrapLength) : string
     {
-        if ($wrapLength < 0) {
-            throw new \InvalidArgumentException('Wrap function allows only positive wrap length');
-        }
+        $this->ensureWrapLengthIsPositive($wrapLength);
 
         $result = '';
         if ($wrapLength < strlen($string)) {
@@ -32,5 +32,17 @@ class WordWrap
             $result = $string;
         }
         return $result;
+    }
+    
+    
+    /**
+     * @param int $wrapLength
+     * @throws InvalidArgumentException
+     */
+    private function ensureWrapLengthIsPositive(int $wrapLength)
+    {
+        if ($wrapLength < 0) {
+            throw new InvalidArgumentException('Wrap function allows only positive wrap length');
+        }
     }
 }
