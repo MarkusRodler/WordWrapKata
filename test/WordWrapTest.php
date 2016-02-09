@@ -3,10 +3,13 @@ declare(strict_types = 1);
 
 namespace Dark\Kata;
 
+use InvalidArgumentException;
+use PHPUnit_Framework_TestCase;
+
 /**
  * @covers \Dark\Kata\WordWrap
  */
-class WordWrapTest extends \PHPUnit_Framework_TestCase
+class WordWrapTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var WordWrap $wordWrap
