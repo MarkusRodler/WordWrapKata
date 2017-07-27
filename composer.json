@@ -9,7 +9,7 @@
     ],
     "require": {},
     "require-dev": {
-        "phpunit/phpunit": "5.*"
+        "phpunit/phpunit": "6.*"
     },
     "autoload": {
         "psr-4": { "Dark\\Kata\\": ["src/", "test/"] }
