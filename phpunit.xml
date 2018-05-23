@@ -1,11 +1,13 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-		colors="true"
+		backupGlobals="false"
 		beStrictAboutChangesToGlobalState="true"
+		beStrictAboutCoversAnnotation="true"
 		beStrictAboutOutputDuringTests="true"
 		beStrictAboutTestsThatDoNotTestAnything="true"
+		beStrictAboutTodoAnnotatedTests="true"
 		bootstrap="vendor/autoload.php"
-		checkForUnintentionallyCoveredCode="true"
+		colors="true"
 		convertErrorsToExceptions="true"
 		convertNoticesToExceptions="true"
 		convertWarningsToExceptions="true"
@@ -14,9 +16,12 @@
 		verbose="true">
     <testsuites>
         <testsuite name="All tests">
-            <directory>test</directory>
+		    <directory suffix="Test.php">tests</directory>
         </testsuite>
-    </testsuites>
+	</testsuites>
+	<logging>
+		<log type="coverage-html" target="build/coverage" />
+	</logging>
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="false">
             <directory>src</directory>
