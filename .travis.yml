@@ -14,5 +14,5 @@ script:
   - ./vendor/bin/phpunit -v -c phpunit.xml --coverage-text --coverage-clover=./build/logs/clover.xml
 
 after_script: 
-  - php vendor/bin/coveralls -v 
+  - php ./vendor/bin/coveralls -v 
 
